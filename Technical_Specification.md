@@ -1,8 +1,8 @@
-# Technical Specification Document - Spotlight
+# Technical Specification Document — Spotlight
 
 **Team:** Shashwat Mishra, Rohan Shetty  
 **Advisor:** Dr. Hrishikesh Vinayak Bhide  
-**Version:** 0.1 - 2026-11-18 (draft for team and advisor review)
+**Version:** 0.2 — 2026-11-18 (draft for team and advisor review)
 
 **Traces to:** Requirements_Document.md v0.1 (2026-11-18). Terms follow its glossary.
 
@@ -11,6 +11,7 @@
 | Version | Date | Change | Author / review |
 | --- | --- | --- | --- |
 | 0.1 | 2026-11-18 | Consolidates D0–D2 and Week 8 plan. Maps new requirement IDs to existing interfaces and planned test groups. No architectural redesign. | Team draft; approval pending |
+| 0.2 | 2026-11-18 | Expands TC-01–TC-24 into TC-nn.m individual cases in Test_Plan.md v0.1; group IDs unchanged. | Team draft; approval pending |
 
 ## 2. Architecture Summary
 
@@ -101,7 +102,7 @@ C2 A1 escapes query operators, restricts allowed sources, ranks exact references
 
 ## 6. Traceability Matrix
 
-Status describes design maturity, not implementation. Test groups TC-01 onward are reserved for Week 10; no test execution is claimed. All requirements map to existing design elements; pending validation is noted in status.
+Status describes design maturity, not implementation. Test groups TC-01–TC-24 refer to individual TC-nn.m cases in [Test_Plan.md](Test_Plan.md) v0.1; no test execution is claimed. All requirements map to existing design elements; pending validation is noted in status.
 
 | Req ID | Description | Design Component (D0/D1/D2) | Status | Test Case |
 | --- | --- | --- | --- | --- |
