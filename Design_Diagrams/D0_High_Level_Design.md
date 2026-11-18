@@ -14,7 +14,7 @@ Design status: proposed baseline for team review; timing values are requirements
 
 ## 2. Block diagram (the D0 diagram)
 
-![D0_Block](D0_Block.svg)
+![D0_Block](D0_Block.png)
 
 The desktop interface is the only human-facing component. C7 orchestrates retrieval-augmented generation (RAG) using C2 and an optional model provider; it does not train a model or directly access development platforms. Search reads the index; synchronization writes through the store; access control gates source reads and search output. The external source group represents local Git and supported remote development APIs.
 
@@ -79,13 +79,13 @@ I12 example response:
 
 ## 5. Data-flow diagram
 
-![D0_Data_Flow](D0_Data_Flow.svg)
+![D0_Data_Flow](D0_Data_Flow.png)
 
 Search: C2 filters candidates through C5 before returning them to C1. The 2-second budget also applies to zero matches; index errors are logged and displayed within 5 seconds (AC-01.2/3). Source references allow navigation without modifying source records.
 
 Synchronization: normalize and validate records before an atomic upsert; update the successful timestamp only after commit. No-change runs return zero updates; authentication failures stop ingestion and report failure within 5 seconds of the API error, preserving existing records (AC-02.2/3). Denied sources must remain hidden from search until authorization is restored; retained records are not treated as permission to display them.
 
-![D0_AI_Flow](D0_AI_Flow.svg)
+![D0_AI_Flow](D0_AI_Flow.png)
 
 AI context flow: retrieve up to 10 authorized records through C2, check destination policy with C5, then send only bounded relevant excerpts to the configured model. C7 validates returned citation IDs and maps them to original source references; this verifies reference membership, not factual correctness. If evidence is insufficient, return a no-context response rather than inventing an answer. External processing requires explicit authorization and appropriate repository policy; local generation is the default when configured. No model calls occur for ordinary search. Proposed AI target: answer or explicit failure within 30 seconds after submission for a configured provider; subject to team validation and a new acceptance criterion. Existing search and sync timing budgets remain unchanged. Semantic retrieval is an optional later refinement inside C2/C6; baseline RAG works with keyword retrieval and does not require embeddings.
 
