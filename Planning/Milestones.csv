@@ -1,0 +1,23 @@
+ID,Date,Milestone,Verification / outcome,Verifier,Status
+M1,"Sep 2, 2026",Professional biographies,Both biographies present in repository,Team / instructor,Draft available; submission unverified
+M2,"Sep 9, 2026*",Team formation,Team roster and project description present; Team Table entry checked,Team / instructor,Draft available; Team Table unverified
+M3,"Sep 18, 2026",Advisor and constraints,"Advisor acceptance, essay and contract; explicit contract approval",Advisor / instructor,Partial: essay and contract committed; approval pending
+M4,"Sep 28, 2026",User stories,"Five stories, use cases and criteria in PDF and repository",Team / instructor,Draft available; submission unverified
+M5,"Oct 2, 2026",D0,Seven-component design and interface specifications,Team / instructor,Draft available; submission unverified
+M6,"Oct 8, 2026",D1,"Data model, algorithms, API and stack",Team / instructor,Draft available; submission unverified
+M7,"Oct 14, 2026",D2 and peer review,"Consolidated packet, traceability and peer notes",Team / instructor,D2 committed; peer feedback pending
+M8,"Oct 28, 2026",Planning packet,"Task list, timeline, effort and risk register",Team / instructor,Current draft; late
+M9,"Nov 4, 2026*",Technical specification,Requirements and traceability reviewed,Advisor / instructor,Pending / verify
+M10,"Nov 11, 2026*",Test plan,Acceptance tests linked to requirements,Team / instructor,Pending / verify
+M11,"Nov 18, 2026*",Week 11 deliverable / presentation,Week 11 work and presentation evidence checked,Instructor,Week 11 work reported done; presentation pending
+M12,"Nov 25, 2026*",Week 12 checkpoint,Confirm official deliverable and collect evidence,Instructor,Unverified course requirement
+M13,"Dec 2, 2026*",Week 13 checkpoint,Confirm official deliverable and resolve design gaps,Instructor,Unverified course requirement
+M14,"Dec 9, 2026*",Week 14 report,Fall report includes approved plan and design evidence,Advisor / instructor,Planned; verify deadline
+M15,"Jan 22, 2027",Local foundation,"Schema migration, FTS fixture, denied-access test pass",Both / advisor,Planned
+M16,"Feb 5, 2027",Source connection,Git/GitHub fixture read and desktop source setup demonstrated,Both / advisor,Planned
+M17,"Feb 19, 2027",Atomic ingestion,100-record sync; rollback and duplicate tests pass,Both / advisor,Planned
+M18,"Mar 5, 2027",Core search MVP,"Authorized keyword results, source opening and 10k-record fixture",Both / advisor,Planned
+M19,"Mar 26, 2027",AI context MVP,"Cited answer, no-context and denied-cloud cases demonstrated",Both / advisor,Planned
+M20,"Apr 9, 2027",Validation gate,Acceptance tests and timing results recorded,Both / advisor,Planned
+M21,"Apr 23, 2027",Final prototype,"Demo, documentation and known limitations reviewed",Both / advisor,Planned
+M22,"Apr 30, 2027*",Release / course handoff,Final submission package accepted for handoff,Advisor / instructor,Proposed; verify course date

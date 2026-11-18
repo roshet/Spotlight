@@ -1,0 +1,8 @@
+ID,Category / risk,L,I,Strategy,Mitigation / schedule link,Owner,Trigger
+R1,Technical - FTS or driver performance misses 2 s target,M,H,Reduce,Verify FTS support T1; benchmark T11; use indexed filters before adding features,Rohan Shetty,Driver fails FTS fixture or search exceeds 2 s
+R2,Technical - Local LLM exceeds RAM or 30 s deadline,H,H,Reduce,T8 test small licensed model; retain search and explicit timeout; no automatic cloud fallback,Shashwat Mishra,Model cannot load or exceeds deadline
+R3,Technical - Private records or secrets leak,M,H,Avoid,"T2 deny by default, vault; T8 consent and destination policy; T11 negative tests",Shashwat Mishra,Unauthorized record returned or provider call attempted
+R4,External - GitHub rate limit / expired credentials,M,M,Reduce,T3 mock API and public fixtures; T5 bounded retry and rollback,Shashwat Mishra,401/403/429 or timeout
+R5,"Team - Exams, co-op or missed deadlines reduce capacity",H,H,Reduce,"Weekly owner review; protected task buffers, Mar 8–12 reserve and Apr 26–30 handoff reserve; reassign tasks",Rohan Shetty,Milestone slips or member unavailable > 2 weekdays
+R6,External - Advisor feedback or course calendar changes,M,H,Reduce,Biweekly advisor check-ins; confirm actual dates before baselining; reserve handoff week,Rohan Shetty,Approval outstanding or official date differs
+R7,Technical - Partial sync corrupts index,M,H,Reduce,"T5 transactional writes, T10 rollback and restart fixture",Shashwat Mishra,Record count/cursor changes after failed sync
