@@ -25,4 +25,8 @@ Spotlight is a developer productivity tool designed to help software developers 
 
 ## Faculty / Industry Advisor
 
-**To be determined**
+* **Dr. Hrishikesh Vinayak Bhide**
+
+   * Position: Assistant Professor
+   * Department: Computer Science, University of Cincinnati
+   * Email: bhidehk@ucmail.uc.edu
